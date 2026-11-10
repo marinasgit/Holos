@@ -1,0 +1,24 @@
+{
+  "name": "holos-scripts",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Catalog import and nightly price snapshot jobs for Holos",
+  "scripts": {
+    "import-catalog": "tsx src/import-catalog.ts",
+    "snapshot-prices": "tsx src/snapshot-prices.ts",
+    "test": "tsx --test src/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.119.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3"
+  }
+}
